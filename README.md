@@ -1,5 +1,5 @@
 👋 Hi, I'm Alfred
-Passionate [Web Developer, web Designer] 
+
 🚀 About Me
 Welcome to my GitHub portfolio! I'm a Full stark Web developer with a strong interest in building user-friendly web applications, analyzing complex datasets, creating intuitive designs.
 
@@ -30,4 +30,4 @@ GitHub: https://github.com/alfredjbphiri
 
 LinkedIn: https://www.linkedin.com/in/alfredjbphiri/
 
-Email: alfredjbphiri@gmail.com
+Email: [![Email Me](https://img.shields.io/badge/Email%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alfredjbphiri@gmail.com)
