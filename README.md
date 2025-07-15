@@ -30,4 +30,5 @@ GitHub: https://github.com/alfredjbphiri
 
 LinkedIn: https://www.linkedin.com/in/alfredjbphiri/
 
-Email: [![Email Me](https://img.shields.io/badge/Email%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alfredjbphiri@gmail.com)
+[![Email Me](https://img.shields.io/badge/Email%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alfredjbphiri@gmail.com)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/265888057086)
