@@ -8,15 +8,15 @@ I enjoy solving challenging coding problems, learning new technologies, collabor
 🌟 My Skills
 Here's a snapshot of the technologies and tools I work with:
 
-Languages: [Python, JavaScript,, C++, etc.]
+Languages: Python, JavaScript,, C++, c
 
-Frontend: [React, Angular, Vue.js, HTML, CSS, Tailwind CSS, bootstrap]
+Frontend: React, Angular, Vue.js, HTML, CSS, Tailwind CSS, bootstrap
 
-Backend: [Node.js, Django, Ruby on Rails]
+Backend: Node.js, Django, Ruby on Rails
 
-Databases: [SQL (MySQL), NoSQL (MongoDB, Firebase)]
+Databases: SQL (MySQL), NoSQL (MongoDB, Firebase)
 
-Tools & Platforms: [Git, GitHub, Docker, AWS, Azure, Figma]
+Tools & Platforms: Git, GitHub, Docker, AWS, Azure, Figma
 
 
 ✨ My Projects
