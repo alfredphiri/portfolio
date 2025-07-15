@@ -26,9 +26,6 @@ Here are some highlights from my portfolio. Click on the project names to explor
 🤝 Let's Connect!
 I'm always open to new opportunities, collaborations, or just a friendly chat about technology!
 
-GitHub: https://github.com/alfredjbphiri
-
-LinkedIn: https://www.linkedin.com/in/alfredjbphiri/
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/YOUR_ACTUAL_LINKEDIN_PROFILE_URL](https://www.linkedin.com/in/alfredjbphiri)/)
 [![Email Me](https://img.shields.io/badge/Email%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alfredjbphiri@gmail.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/265888057086)
