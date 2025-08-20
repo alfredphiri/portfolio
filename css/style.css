@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --redish :red;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+    user-select: none;
+    
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* background: linear-gradient(to right, #ffffff, #f8f2ec); */
+    color: #0d0000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+html{
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #ffffffe6;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-family: 'Bitcount Prop Single', monospace;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.socials a {
+    margin-left: 1rem;
+}
+
+.socials a i {
+    font-size: 1.8rem;
+    color: #000;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:nth-child(2) i {
+    color: #1877f2;
+}
+
+.socials a:nth-child(3) i {
+    color: #128c7e;
+}
+
+
+.socials a:hover i {
+    transform: scale(1.1);
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+#gith{
+    transition: border-bottom 30ms ease;
+}
+#gith:hover{
+    border-bottom: solid 2px #b4a0dc;
+}
+.container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.container .img img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #00000033;
+    transition: transform 0.3s ease;
+}
+
+.container .img img:hover {
+    transform: scale(1.1);
+    box-shadow: color-mix(in hsl shorter hue, color percentage, color percentage);
+}
+
+.container .text h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #282012, #40049f, #f08204);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: shine 3s ease-in-out infinite;
+    margin-bottom: 1rem;
+}
+
+.container .text p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+@keyframes shine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #555;
+    background: #f0eae0;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    .container .text {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    .socials a i {
+        font-size: 1.5rem;
+    }
+    .container .text h1 {
+        font-size: 2rem;
+    }
+    .container .text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .header .socials {
+        display: none;
+    }
+    .header
+    {
+     justify-content: center;
+   
+    }
+    .header .logo
+    {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, #282012, #40049f, #f08204);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: shine 5s ease-in-out infinite;
+    /* margin-bottom: 1rem; */
+   }
+ }
