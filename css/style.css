@@ -13,7 +13,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    /* background: linear-gradient(to right, #ffffff, #f8f2ec); */
+    background: linear-gradient(to right, #ffffff,#bfb14a);
     color: #0d0000;
     display: flex;
     flex-direction: column;
@@ -34,8 +34,8 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-    background: #ffffffe6;
-    backdrop-filter: blur(5px);
+    background:rgba(255, 255, 255, 0.589);
+    backdrop-filter: blur(1px);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -45,7 +45,7 @@ a {
 .logo {
     font-family: 'Bitcount Prop Single', monospace;
     font-size: 1.8rem;
-    color: #000;
+    color: #000000;
 }
 
 .socials a {
@@ -59,16 +59,19 @@ a {
 }
 
 .socials a:nth-child(2) i {
-    color: #1877f2;
+    color: #2983f8;
 }
-
+.socials a i {
+    color: rgb(0, 0, 0);
+}
 .socials a:nth-child(3) i {
-    color: #128c7e;
+    color: #0dc3ae;
 }
 
 
 .socials a:hover i {
     transform: scale(1.1);
+    
 }
 
 /* Main Content */
@@ -111,7 +114,7 @@ main {
 .container .text h1 {
     font-size: 2.5rem;
     font-weight: 800;
-    background: linear-gradient(90deg, #282012, #40049f, #f08204);
+    background: linear-gradient(90deg, #000000, #0e0686, #f08204);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%;
@@ -135,8 +138,8 @@ footer {
     text-align: center;
     padding: 1.5rem;
     font-size: 0.9rem;
-    color: #555;
-    background: #f0eae0;
+    color: #000000;
+     background: linear-gradient(to right, #ffffff,#bfb14a);
     margin-top: auto;
 }
 
