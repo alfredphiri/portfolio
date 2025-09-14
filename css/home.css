@@ -21,8 +21,8 @@
         font-family: arial;
         box-sizing: border-box;
         color: var(--dftColor);
-        margin: 0; /* removed fixed margin to allow full-bleed mobile layouts */
-        padding: 20px; /* keep visual padding but allow responsive control */
+        margin: 0; 
+        padding: 20px;
     }
 
 
@@ -279,7 +279,7 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        /* -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent); */
+        -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
         mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
      }
    
@@ -570,4 +570,5 @@
 
 .send-button:hover {
     background-color: #e6e6e6;
+
 }
