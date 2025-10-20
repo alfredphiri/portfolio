@@ -75,8 +75,8 @@
             font-weight: 700;
             color: #2d2d4d;
             letter-spacing: 8px;
-            -webkit-text-stroke: 2px #2d2d4d;
-            -webkit-text-fill-color: transparent;
+            /* -webkit-text-stroke: 2px #2d2d4d;
+            -webkit-text-fill-color: transparent; */
             margin-bottom: 30px;
         }
 
@@ -333,4 +333,5 @@
             .tagline { font-size: 22px; }
             .container { padding: 40px 20px; }
             .contact-section { padding: 30px 20px; }
+
         }
