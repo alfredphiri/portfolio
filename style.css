@@ -23,16 +23,9 @@
             overflow: hidden;
         }
 
-        .butterfly {
-            position: absolute;
-            font-size: 32px;
-            animation: float 3s ease-in-out infinite;
-        }
+    
 
-        .butterfly-1 { top: 140px; left: 80px; animation-delay: 0s; }
-        .butterfly-2 { top: 350px; left: 60px; animation-delay: 1s; }
-        .butterfly-3 { top: 260px; right: 100px; animation-delay: 0.5s; }
-        .butterfly-4 { bottom: 280px; right: 140px; animation-delay: 1.5s; }
+    
 
         @keyframes float {
             0%, 100% { transform: translateY(0px) rotate(0deg); }
@@ -75,8 +68,8 @@
             font-weight: 700;
             color: #2d2d4d;
             letter-spacing: 8px;
-            /* -webkit-text-stroke: 2px #2d2d4d;
-            -webkit-text-fill-color: transparent; */
+            -webkit-text-stroke: 2px #2d2d4d;
+            -webkit-text-fill-color: transparent;
             margin-bottom: 30px;
         }
 
