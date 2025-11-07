@@ -83,14 +83,10 @@
 
         .tagline {
             font-size: 28px;
-            color: #4a4a6a;
             margin-bottom: 15px;
         }
 
         .tagline .highlight {
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             font-weight: 600;
         }
 
@@ -155,7 +151,7 @@
         }
 
         .learning-badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color :rgb(7, 61, 95);
             color: white;
             font-size: 11px;
             padding: 3px 8px;
@@ -235,7 +231,8 @@
         }
 
         .submit-btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+            background-color :rgb(7, 61, 95);
             color: white;
             border: none;
             padding: 15px 40px;
@@ -321,8 +318,8 @@
         }
 
         @media (max-width: 768px) {
-            .name { font-size: 48px; }
-            .surname { font-size: 42px; }
+            .name { font-size: 43px; }
+            .surname { font-size: 37px; }
             .tagline { font-size: 22px; }
             .container { padding: 40px 20px; }
             .contact-section { padding: 30px 20px; }
