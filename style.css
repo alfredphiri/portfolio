@@ -21,6 +21,12 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
             position: relative;
             overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .container.visible {
+            opacity: 1;
         }
 
     
@@ -261,6 +267,33 @@
             text-align: center;
             margin-top: 20px;
             display: none;
+            position: relative;
+        }
+
+        .success-message.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .success-checkbox {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            animation: scaleCheckmark 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        @keyframes scaleCheckmark {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
 
         .footer {
@@ -330,4 +363,56 @@
                 .social-link span {
                     display: none;
                 }
+        }
+
+        /* Loader Animation */
+        .loader {
+            width: 40px;
+            aspect-ratio: 1;
+            background: #2d2d4d;
+            display: grid;
+            transform-origin: top right;
+            animation: l6-0 1s infinite linear;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .loader.active {
+            display: grid;
+        }
+
+        .loader::before,
+        .loader::after {
+            content: "";
+            grid-area: 1/1;
+            background: #667eea;
+            transform-origin: inherit;
+            animation: inherit;
+            animation-name: l6-1;
+        }
+
+        .loader::after {
+            background: #764ba2;
+            --s: 180deg;
+        }
+
+        @keyframes l6-0 {
+            70%,
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes l6-1 {
+            30% {
+                transform: rotate(var(--s, 90deg));
+            }
+            70% {
+                transform: rotate(0);
+            }
         }
