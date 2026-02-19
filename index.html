@@ -25,6 +25,9 @@
 </head>
 
 <body>
+  <!-- Loader Animation -->
+  <div class="loader" id="pageLoader"></div>
+
   <div class="container">
 
 
@@ -35,7 +38,6 @@
     <div class="intro">
       <p class="greeting">Hi, i am</p>
       <h1 class="name"> &lt;alfred /&gt;</h1>
-     <!-- <h2 class="surname">PHIRI</h2> -->
       <div class="divider"></div>
       <p class="tagline">
         I am a web <span class="highlight">designer</span> and
@@ -133,7 +135,7 @@
 
            <div class="skill-item">
             <!-- <i class="fa-brands fa-python"></i> -->
-             <img width="60" src="  https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg" alt="">
+             <img width="40" src="  https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg" alt="">
            
             <span class="skill-name">Python</span>
             <span class="learning-badge">Learning</span>
@@ -179,7 +181,7 @@
       <h2 class="section-title">Get In Touch</h2>
       <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
   
-  <!-- REQUIRED: Web3Forms access key -->
+  <!--  -->
   <input type="hidden" name="access_key" value="c5b35acb-fefb-47ba-87b5-bc82018982a0">
 
   <div class="form-group">
@@ -203,6 +205,7 @@
   <button type="submit" class="submit-btn">Send Message</button>
 
   <div class="success-message" id="successMessage">
+    <img src="hh.svg" alt="checkmark" class="success-checkbox">
     Thank you! Your message has been sent successfully.
   </div>
 
@@ -215,7 +218,7 @@
         <div class="footer-links">
 
         </div>
-        <p class="copyright">©2026 Alfred Phiri. All rights reserved.</p>
+        <p class="copyright">©<span id="currentYear">2026</span> Alfred Phiri. All rights reserved.</p>
       </div>
     </footer>
   </div>
