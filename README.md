@@ -6,11 +6,12 @@ Hello! I'm Alfred and this is my portfolio. Here you will find a collection of m
 I am a passionate developer focused on creating efficient and user friendly solutions. My goal is to build meaningful projects that make a difference.
 
 ## Skills
-- Programming Languages
 - Web Development
 - Database Management
 - Problem Solving
 - Systems Analysis
+- data Analysis
+- Mobile App Development
 
 ## Contact
 Feel free to reach out to me at:
