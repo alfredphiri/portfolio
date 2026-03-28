@@ -197,6 +197,91 @@ body {
 }
 
 
+.projects-section {
+    margin-bottom: 64px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--background-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.05);
+}
+
+.project-content {
+    flex: 1;
+    padding-right: 24px;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.project-desc {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.project-tech {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tech-tag {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-primary);
+    background: var(--background);
+    border: 1px solid var(--border-color);
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+.project-link-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--background);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    font-size: 18px;
+}
+
+.project-card:hover .project-link-icon {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    transform: rotate(-45deg);
+}
+
 .contact-section {
     padding-top: 64px;
     border-top: 1px solid var(--border-color);
@@ -325,6 +410,21 @@ body {
 
 
 @media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .project-content {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .project-link-icon {
+        align-self: flex-end;
+    }
+
     .container {
         padding: 48px 16px;
     }
