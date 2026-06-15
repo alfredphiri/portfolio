@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfred ⨝ Wep Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/alfred.css" />
+    
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar">
+      <a href="#" class="nav-logo">Alfred<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        Open to work
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-label reveal"> Design Engineer ⨀ Based in Zomba, CN
+          </div>
+          <h1 class="reveal reveal-delay-1">
+            I build things<br />for the <em>web</em> that<br />feel right.
+          </h1>
+          <p class="hero-desc reveal reveal-delay-2">
+            Design engineer with 7+ years of experience bridging the gap between
+            design and development. Currently focused on building accessible,
+            performant interfaces that don't compromise on aesthetics.
+          </p>
+          <div class="hero-actions reveal reveal-delay-3">
+            <a href="#contact" class="btn-primary">
+              Get in touch
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="btn-secondary"
+              onclick="
+                window.print();
+                return false;
+              "
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"
+                />
+              </svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+        <div class="hero-card reveal reveal-delay-2">
+          <div class="hero-card-photo">
+            <img src="img/alfred.jpg" alt="" width="100%">
+           
+          </div>
+          <h3>Alfred</h3>
+          <p class="role">Senior Web Developer</p>
+          <div class="hero-card-meta">
+            <div class="meta-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              University of Livingstonia
+            </div>
+            <div class="meta-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              me@alfredphiri.dev
+            </div>
+            <div class="meta-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"
+                />
+                <path
+                  d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"
+                />
+              </svg>
+              alfredphiri.dev
+            </div>
+            <div class="meta-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                />
+              </svg>
+              github.com/alfredphiri
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="section-divider"><hr /></div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-header reveal">
+        <span class="section-number">01</span>
+        <h2>Experience</h2>
+        <span class="section-line"></span>
+      </div>
+     
+
+        <div class="exp-item reveal">
+          <div class="exp-period">2017 - Present</div>
+          <div>
+            <div class="exp-company">Freelance</div>
+            <div class="exp-role">Web App Developer & Designer</div>
+            <p class="exp-desc">
+              Built websites and brand identities for small businesses and
+              startups in Malawi
+            </p>
+          </div>
+          <div class="exp-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">WordPress</span>
+            <span class="tag">Branding</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">React</span>
+            <span class="tag">Css</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">Flutter</span>
+            <span class="tag">Vue</span>
+            <span class="tag">Taiwind</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Font Awesome</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Python</span>
+            <span class="tag">Data Visualisation</span>
+            <span class="tag">Data Cleaning</span>
+            <span class="tag">Data Mining</span>
+            <span class="tag">HTML</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><hr /></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-header reveal">
+        <span class="section-number">02</span>
+        <h2>Projects</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="projects-grid">
+        <a class="project-card featured reveal" href="#">
+          <div class="project-thumb">
+            <div class="project-thumb-inner">
+              <svg viewBox="0 0 200 100" fill="none">
+                <rect
+                  x="10"
+                  y="10"
+                  width="180"
+                  height="80"
+                  rx="8"
+                  stroke="#1a1a1a"
+                  stroke-width="1.5"
+                />
+                <line
+                  x1="10"
+                  y1="30"
+                  x2="190"
+                  y2="30"
+                  stroke="#1a1a1a"
+                  stroke-width="1"
+                />
+                <circle cx="25" cy="20" r="3" fill="#c45d3e" />
+                <circle cx="35" cy="20" r="3" fill="#d4d0c8" />
+                <circle cx="45" cy="20" r="3" fill="#d4d0c8" />
+                <rect
+                  x="25"
+                  y="42"
+                  width="60"
+                  height="6"
+                  rx="3"
+                  fill="#d4d0c8"
+                />
+                <rect
+                  x="25"
+                  y="55"
+                  width="100"
+                  height="4"
+                  rx="2"
+                  fill="#e5e1d9"
+                />
+                <rect
+                  x="25"
+                  y="65"
+                  width="80"
+                  height="4"
+                  rx="2"
+                  fill="#e5e1d9"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Open Source</div>
+            <h3>Prism — A lightweight design token system</h3>
+            <p>
+              A framework-agnostic design token manager that syncs tokens across
+              Figma, code, and documentation. Used by 200+ teams. Featured in
+              State of JS 2023.
+            </p>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="project-stack">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Figma API</span>
+              </div>
+              <span class="project-link">
+                View project
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card reveal reveal-delay-1" href="#">
+          <div class="project-thumb">
+            <div class="project-thumb-inner">
+              <svg viewBox="0 0 100 100" fill="none">
+                <rect
+                  x="20"
+                  y="15"
+                  width="60"
+                  height="70"
+                  rx="6"
+                  stroke="#1a1a1a"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="30"
+                  y="25"
+                  width="40"
+                  height="30"
+                  rx="3"
+                  fill="#edeae4"
+                />
+                <rect
+                  x="30"
+                  y="62"
+                  width="25"
+                  height="4"
+                  rx="2"
+                  fill="#d4d0c8"
+                />
+                <rect
+                  x="30"
+                  y="70"
+                  width="35"
+                  height="3"
+                  rx="1.5"
+                  fill="#e5e1d9"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Case Study</div>
+            <h3>Atlas Dashboard</h3>
+            <p>
+              Complete redesign of an analytics platform for a logistics company
+              serving 40+ countries.
+            </p>
+            <div class="project-stack">
+              <span class="tag">React</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card reveal reveal-delay-2" href="#">
+          <div class="project-thumb">
+            <div class="project-thumb-inner">
+              <svg viewBox="0 0 100 100" fill="none">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="30"
+                  stroke="#1a1a1a"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M50 20 L50 50 L70 60"
+                  stroke="#1a1a1a"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <circle cx="50" cy="50" r="3" fill="#c45d3e" />
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Tool</div>
+            <h3>Chrono</h3>
+            <p>
+              A minimal time-tracking app for freelancers. Built it for myself,
+              then open-sourced it.
+            </p>
+            <div class="project-stack">
+              <span class="tag">Svelte</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Tauri</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <div class="section-divider"><hr /></div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-header reveal">
+        <span class="section-number">03</span>
+        <h2>Skills & Tools</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3><span class="icon">⚡</span> Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">React</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CSS / Tailwind</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">TypeScript</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="40%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <span class="skill-name">Vue</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="skill-group reveal reveal-delay-1">
+            <h3><span class="icon"> /* logo */ </span> Design</h3>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <span class="skill-name">Figma</span>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Design Systems</span>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="93%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Prototyping</span>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Accessibility</span>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Motion Design</span>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="70%"></div></div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="skill-group reveal reveal-delay-2">
+          <h3><span class="icon">🛠</span> Backend & Other</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">PostgreSQL</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">GraphQL</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Docker / CI/CD</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="72%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="65%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Laravel</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><hr /></div>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="section-header reveal">
+        <span class="section-number">04</span>
+        <h2>Education</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="education-list">
+        <div class="edu-item reveal">
+          <div class="edu-year">2017 - 2019</div>
+          <div>
+            <div class="edu-school">Salima Technical College</div>
+            <div class="edu-degree">
+              Advanced Diploma in Information and Communication Technology
+            </div>
+            <div class="edu-detail">Merit</div>
+          </div>
+        </div>
+
+        <div class="edu-item reveal">
+          <div class="edu-year">2018 - Present</div>
+          <div>
+            <div class="edu-school">University of Livingstonia</div>
+            <div class="edu-degree">
+              BEd in Information and Communication Technology
+            </div>
+            <div class="edu-detail">Pending...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="section-divider"><hr></div> -->
+
+    <!-- TESTIMONIALS -->
+    <!-- <section>
+    <div class="section-header reveal">
+        <span class="section-number">05</span>
+        <h2>Kind Words</h2>
+        <span class="section-line"></span>
+    </div>
+
+    <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+            <p class="testimonial-text">Marcus has a rare ability to understand both the design intent and the technical constraints. He doesn't just implement designs — he improves them.</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">SK</div>
+                <div>
+                    <div class="testimonial-name">Sarah Kim</div>
+                    <div class="testimonial-role">Design Lead, Vercel</div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+            <p class="testimonial-text">Working with Marcus on the checkout redesign was a masterclass in collaboration. He caught edge cases nobody else saw and shipped ahead of schedule.</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">JR</div>
+                <div>
+                    <div class="testimonial-name">James Rodriguez</div>
+                    <div class="testimonial-role">Engineering Manager, Stripe</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+    <!-- <div class="section-divider"><hr></div> -->
+
+    <!-- CONTACT -->
+    <div class="contact-section" id="contact">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <h2>Let's build<br />something <em>great</em></h2>
+          <p>
+            I'm currently open to new opportunities ◉ whether that's a full-time
+            role, consulting, or just an interesting conversation. Drop me a
+            line.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:me@alfredphiri.dev" class="contact-link-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              me@alfredphiri.dev
+            </a>
+            <a href="#" class="contact-link-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"
+                />
+                <path
+                  d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"
+                />
+              </svg>
+              alfredphiri.dev
+            </a>
+            <a href="github.com/alfredphiri" class="contact-link-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                />
+              </svg>
+              github.com/alfredphiri
+            </a>
+            <a href="linkedin.com/in/alfredjbphiri" class="contact-link-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              linkedin.com/in/alfredjbphiri
+            </a>
+          </div>
+        </div>
+        <form
+          class="contact-form reveal reveal-delay-2"
+          onsubmit="handleSubmit(event)"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Fullname" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="you@company.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Tell me about your project, role, or idea..."
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn-primary"
+            style="align-self: flex-start"
+          >
+            Send message
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-left">
+        © 2026 Alfred Phiri. Built with care and too much coffee @
+        <a href="https://www.unilia.ac.mw">UNILIA</a>.
+      </div>
+      <div class="footer-right">
+        <a href="#">X</a>
+        <a href="#">GitHub</a>
+        <a href="#">Telegram</a>
+        <a href="">LinkedIn</a>
+      </div>
+    </footer>
+    <!-- javascript script -->
+    <script src="js/ivan.js"></script>
+  </body>
+</html>
