@@ -7,16 +7,17 @@
 }
 
 :root {
-  --bg: #f5f3ef;
-  --bg-warm: #edeae4;
-  --text: #1a1a1a;
-  --text-mid: #555;
-  --text-light: #888;
-  --accent: #3ea5c4;
-  --accent-hover: #a84d32;
-  --line: #d4d0c8;
-  --line-light: #e5e1d9;
-  --tag-bg: #e8e4de;
+  --bg: linear-gradient(180deg,#1b1030 0%,#2f2343 100%);
+  --bg-warm: rgba(255,255,255,0.02);
+  --card-bg: rgba(255,255,255,0.03);
+  --text: #e9e6f9;
+  --text-mid: #bfb6d9;
+  --text-light: #9a8fb0;
+  --accent: #871ad0;
+  --accent-hover: #ff6fd8;
+  --line: rgba(255,255,255,0.06);
+  --line-light: rgba(255,255,255,0.04);
+  --tag-bg: rgba(255,255,255,0.03);
 }
 
 html {
@@ -53,9 +54,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(245, 243, 239, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(10, 8, 18, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s;
 }
@@ -197,7 +198,7 @@ nav.scrolled {
   align-items: center;
   gap: 0.5rem;
   padding: 0.65rem 1.75rem;
-  background: var(--text);
+  background: var(--accent);
   color: var(--bg);
   text-decoration: none;
   font-size: 0.85rem;
@@ -210,7 +211,7 @@ nav.scrolled {
 }
 
 .btn-primary:hover {
-  background: var(--accent);
+  /* background: var(--accent); */
   transform: translateY(-1px);
 }
 
@@ -237,8 +238,8 @@ nav.scrolled {
 
 /* Hero sidebar card */
 .hero-card {
-  background: white;
-  border: 1px solid var(--line-light);
+  background: var(--card-bg);
+  border: 1px solid var(--line);
   border-radius: 12px;
   padding: 1.75rem;
   position: sticky;
@@ -425,16 +426,20 @@ section {
 }
 
 .techlogo {
-
-  width: 50px;
-  height: 50px;
-  padding: 5px;
-  /* background: rgba(0, 0, 0, 0.733); */
+  width: 96px;
+  height: 96px;
+  padding: 12px;
+  background: rgba(255,255,255,0.03);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
- 
+  border-radius: 12px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 6px 24px rgba(12,8,32,0.45) inset;
+}
+
+.techlogo:hover {
+  transform: translateY(-6px) scale(1.02);
 }
 
 /* ---- PROJECTS ---- */
@@ -446,8 +451,8 @@ section {
 }
 
 .project-card {
-  background: white;
-  border: 1px solid var(--line-light);
+  background: var(--card-bg);
+  border: 1px solid var(--line);
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.35s ease;
@@ -468,7 +473,7 @@ section {
 
 .project-thumb {
   aspect-ratio: 16/9;
-  background: var(--bg-warm);
+  background: rgba(0,0,0,0.12);
   position: relative;
   overflow: hidden;
 }
@@ -566,8 +571,8 @@ section {
 }
 
 .skill-group {
-  background: white;
-  border: 1px solid var(--line-light);
+  background: var(--card-bg);
+  border: 1px solid var(--line);
   border-radius: 10px;
   padding: 1.75rem;
 }
@@ -672,8 +677,8 @@ section {
 }
 
 .testimonial-card {
-  background: white;
-  border: 1px solid var(--line-light);
+  background: var(--card-bg);
+  border: 1px solid var(--line);
   border-radius: 10px;
   padding: 1.75rem;
   position: relative;
